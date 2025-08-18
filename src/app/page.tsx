@@ -2,9 +2,13 @@
 
 import { BlueLine } from "@/components/ui/beam2";
 import { HeadingsWithBeam } from "@/components/ui/beamtext";
-import { CollisionLoader } from "@/components/ui/collosionloader";
+import { Loader1 } from "@/components/ui/collosionloader";
 
-import { LoaderFive, LoaderOne } from "@/components/ui/loader";
+import { CollisionLoader, Loader, TextLoader } from "@/components/ui/loader";
+import BouncingBalls from "@/components/ui/loader1";
+import Loader2 from "@/components/ui/loader1";
+
+
 // import CollisionLoader from "@/components/ui/loaderbounde";
 
 
@@ -17,7 +21,7 @@ export default function Home() {
       {/* <Beam />
         <BlueLine />
         <HeadingsWithBeam /> */}
-     <LoaderOne />
+     <Loader />
 
 
 
@@ -31,8 +35,15 @@ export default function Home() {
          <div className="my-10">
      </div>
      
-         <LoaderFive text="Loading..." /> 
+         <TextLoader text="Loading..." /> 
+<div className="my-10"> </div>
 
+
+
+   <Loader1 />
+
+
+   <BouncingBalls />
     </div>
   );
 }
